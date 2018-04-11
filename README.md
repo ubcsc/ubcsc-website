@@ -2,7 +2,7 @@
 Univeristy Of Buea Computer Science departmental site
 
 
-Welcome to the University of Buea Computer Science Departmental Site. The CS site serves
+Welcome to the University of Buea Computer Science Departmental Site. The site serves
 as an intellectual crossroad for the University, a place which works to educate the next
 generation of teachers, scholars, researchers and engineers to develop the fields of
 knowledge and research.
