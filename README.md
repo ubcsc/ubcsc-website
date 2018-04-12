@@ -9,4 +9,4 @@ knowledge and research.
 
 To get a head start Read the [project plan](https://github.com/ubcsc/ubcsc-website/wiki/Poject-proposal)
 
-To Contribute to the Project please read the [Contribution Guide](https:#)
+To Contribute to the Project please read the [Contribution Guide](https://github.com/ubcsc/ubcsc-website/blob/master/CONTRIBUTING.md)
