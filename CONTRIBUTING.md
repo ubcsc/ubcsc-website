@@ -1,18 +1,18 @@
-Contributing
+### Contributing
 
 From opening a bug report to creating a pull request: every contribution is appreciated and welcomed.
 If you're planning a new feature or changing the api, please create an issue first.
 This way we can ensure that your precious work is not in vain.
 
-Issues
+### Issues
 
 In most cases if a bug is discoverd an issues may be raced, also based on the development lifecyle issues can be selected from already raced ones. 
 
-Setup
+### Setup
 
 .......
 
-Naming a branch
+### Naming a branch
 
 Making a branch in your fork for your contribution is helpful in the following ways:
 
@@ -24,14 +24,14 @@ You will want to checkout the master branch locally before creating your new bra
 
 
 
-Pull Requests
+### Pull Requests
 
 Push to your fork and submit a pull request. We may suggest some changes, improvements or implementation alternatives that may apply 
 In case you have a small change in most of the cases your pull request would be accepted quicker.
 
 Submitting a good Pull Request
 
-Write tests
+### Write tests
 
 .......
 
