@@ -6,10 +6,10 @@ This way we can ensure that your precious work is not in vain.
 
 ### Issues
 
-In most cases if a bug is discoverd an issues may be raced, also based on the development lifecyle issues can be selected from already raced ones. 
+In most cases if a bug is discovered, an issue may be raised, also based on the development lifecyle, issues can be selected from already raised ones. 
 
 ### Setup
-For this project we make use the laravel framework. In order to contribute code to this project,
+For this project we make use of the laravel framework. In order to contribute code to this project,
 
 1. **make sure your system(server) meets the following specifications;**
 * PHP >= 7.1.3
