@@ -50,6 +50,7 @@ For this project we make use of the laravel framework. In order to contribute co
 For any difficulty with setting up, contact [Dirane](diranengala@gmail.com)
 
 			*****Setup extension*****
+			use this for step 4 if it fails
 Assumptions made here is
    Php is installed - PHP 7.1.15
    Composer is installed - version 1.6.4
@@ -60,9 +61,11 @@ Steps
 Run the following commands on the terminal 
 
 	1.  `sudo apt-get install php7.1-mbstring`
-	2.  `sudo apt-get install php7.1-mbstring`
-	3.  `sudo apt-get install php-common php-mbstring php-xml`
+	2.  `sudo apt-get install php-common php-mbstring php-xml`
+	3.  `sudo install composer`
 	4.  `composer install`
+	5.  `sudo apt-get update`
+	5.  `sudo apt-get upgrade`
 	5.	`php artisan serve`
 
 3. Open `http://127.0.0.1:8000>` on the browser of your choice .
