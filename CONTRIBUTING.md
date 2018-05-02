@@ -49,6 +49,35 @@ For this project we make use of the laravel framework. In order to contribute co
 
 For any difficulty with setting up, contact [Dirane](diranengala@gmail.com)
 
+			*****Setup extension*****
+Assumptions made here is
+   Php is installed - PHP 7.1.15
+   Composer is installed - version 1.6.4
+Steps 
+1. git clone 
+2. cd into the ubcsc-website directory
+
+Run the following commands on the terminal 
+
+	1.  `sudo apt-get install php7.1-mbstring`
+	2.  `sudo apt-get install php7.1-mbstring`
+	3.  `sudo apt-get install php-common php-mbstring php-xml`
+	4.  `composer install`
+	5.	`php artisan serve`
+
+3. Open `http://127.0.0.1:8000>` on the browser of your choice .
+   The brower should display an error page here saying something went wrong.
+
+4. run `cp .env.example .env` to copy the sample environment setup from .env.example into .env file. 
+
+5. run `php artisan key:generate ` to generate an encryption key.
+
+6. Reload the browser on `http://127.0.0.1:8000>`
+
+9. Success Laravel up and running. 
+
+
+
 ### Naming a branch
 
 Making a branch in your fork for your contribution is helpful in the following ways:
@@ -57,6 +86,8 @@ Making a branch in your fork for your contribution is helpful in the following w
     It allows us to identify what your contribution is about from the branch name.
 
 You will want to checkout the master branch locally before creating your new branch.
+
+
 
 
 
