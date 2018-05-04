@@ -1,0 +1,213 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Home Page</strong>
+          <small>Pictures</small>
+        </div>
+          <div class="card-body">
+            <ul class="picturelist">
+              <li *ngFor="let homepicture of homePagePic" class="picturelist">
+                <div class="col-sm-6 ">
+                  <img src={{homepicture.pic}} class="" alt="Home page Picture" width="250" height="250" style="padding-bottom: 100px;" />
+                </div>
+
+                <button type="delete" class="btn btn-sm btn-danger" data-toggle="modal" (click)="dangerModal.show()"><i class="fa fa-ban"></i> Delete </button>
+             </li>
+            </ul>
+          </div>
+          <div class="card-footer">
+             <button type="browse" class="btn btn-sm btn-info"><i class="fa fa-ban"></i> Upload HomePage Image </button>
+          </div>
+        </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Announcement</strong>
+          <small>list</small>
+        </div>
+        <div class="card-body">
+          <li *ngFor="let annc of announcements" class="listannc">
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="announcements" value={{annc.news}}>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <button type="submit" class="btn btn-sm btn-primary" data-toggle="modal" (click)="saveAnnouncementModal.show()"><i class="fa fa-dot-circle-o"></i> Save Changes</button>
+              </div>
+              <div class="col-sm-2">
+                 <button type="browse" class="btn btn-sm btn-danger" data-toggle="modal" (click)="deleteAnnouncementModal.show()"><i class="fa fa-ban"></i> Delete</button>
+              </div>
+            </div>
+          </li>
+        </div>
+        <div class="card-footer">
+           <button type="browse" class="btn btn-sm btn-info"><i class="fa fa-ban"></i> Upload Announcement </button>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>HOD</strong>
+          <small>Message</small>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+              <label for="hodmessage">HOD Message</label>
+              <input type="text" class="form-control" id="hodmessage" value="{{ hodmessage }}" style="padding-bottom: 50px;">
+          </div>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" data-toggle="modal" (click)="saveHODMessageModal.show()" ><i class="fa fa-dot-circle-o"></i> Save Changes</button>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Contact</strong>
+          <small>Info</small>
+        </div>
+        <div class="card-body">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="contactNumber">Contact Number</label>
+              <input type="text" class="form-control" id="contactusnumber" value="{{contactus.number}}">
+            </div>
+          </div><!--/.col-->
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="contactEmail">Contact Email</label>
+              <input type="text" class="form-control" id="hodmessage" value="{{contactus.email}}">
+            </div><!--/.col-->
+          </div>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" data-toggle="modal" (click)="saveContactUSModal.show()"><i class="fa fa-dot-circle-o"></i> Save Changes</button>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+</div>
+
+
+
+
+
+<div bsModal #dangerModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-danger" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Delete Picture</h4>
+        <button type="button" class="close" (click)="dangerModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Click delete to <strong>delete</strong> current <strong>picture</strong> or <strong>Cancel</strong> to abort this modal&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="dangerModal.hide()">Close</button>
+        <button type="button" class="btn btn-danger">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<div bsModal #deleteAnnouncementModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-danger" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Delete Announcement</h4>
+        <button type="button" class="close" (click)="deleteAnnouncementModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Click delete to <strong>delete</strong> current <strong>Announcement</strong> or <strong>Cancel</strong> to abort this modal&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="deleteAnnouncementModal.hide()">Close</button>
+        <button type="button" class="btn btn-danger">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<div bsModal #saveAnnouncementModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-info" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Save Announcement</h4>
+        <button type="button" class="close" (click)="saveAnnouncementModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Click Save to save current <strong>Announcement</strong> or <strong>Cancel</strong> to abort this modal&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="saveAnnouncementModal.hide()">Close</button>
+        <button type="button" class="btn btn-info">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<div bsModal #saveHODMessageModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-info" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Save HOD Message</h4>
+        <button type="button" class="close" (click)="saveHODMessageModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Click Save to save <strong>HOD Message</strong>  or <strong>Cancel</strong> to abort this modal&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="saveHODMessageModal.hide()">Close</button>
+        <button type="button" class="btn btn-info">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div bsModal #saveContactUSModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-info" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Save Contact Information</h4>
+        <button type="button" class="close" (click)="saveContactUSModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Click Save to save current <strong>Contact Information</strong> or <strong>Cancel</strong> to abort this modal&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="saveContactUSModal.hide()">Close</button>
+        <button type="button" class="btn btn-info">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
