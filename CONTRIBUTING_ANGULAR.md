@@ -21,7 +21,7 @@ Assumptions made here are
 2. NPM is  installed 
    - npm version 5.x or greater
    - 'v6.0.0' (Current) prefferable 
-   - Luckly for you npm intalls authomatically when intalling Node.js
+   - Luckily for you npm intalls authomatically when intalling Node.js
 
 3. Angular CLI is installed 
    - version 1.x or greater
@@ -37,10 +37,10 @@ Setup Steps
 4. run `ng serve --open` to build and open on the browser on `http://localhost:4200`
 5. alternatively run `ng serve` to build and move to browser of your choice and enter `http://localhost:4200`
 
-After all components are created and  enter the comand below to build ans direct the final build to the laravel public/app directory 
-`ng build --base-href http://localhost:8000/app/`
+After all components are created then enter the command below to build and direct the final build to the laravel public/app directory 
+`ng build --base-href http://localhost:8000/admin/`
 
 See the final build in the laravel server  
-`http://localhost:8000/app/`
+`http://localhost:8000/admin/`
 
 Setup for laravel and running the laravel server is found in the `CONTRIBUTING_LARAVEL.md`.
