@@ -15,8 +15,14 @@ class Achievements extends Migration
     {
         Schema::create('achievements', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('desc');
+            $table->string('title');
+            $table->text('desc')->nullable();
+            $table->binary('image')->nullable();
+            //$table->date('date')->nullable();
+            $table->integer('user_id')->nullable();
+            
+
+            //$table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
