@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'f_name','l_name','phone','image', 'email', 'password','rol_id',
     ];
 
     /**
@@ -26,4 +26,36 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function roles() {
+        return $this->hasMany('App\Role');
+    }
+
+    public function achievements(){
+        return $this->hasMany('App\Achievement');
+    }
+
+    public function alumni() {
+        return $this->hasOne('App\Alumni');
+    }
+
+     public function courses(){
+        return $this->hasMany('App\Course');
+    }
+
+    public function lecturers() {
+        return $this->hasOne('App\Lecturer');
+    }
+
+     public function news_events(){
+        return $this->hasMany('App\NewsEvent');
+    }
+
+    public function projects(){
+        return $this->hasMany('App\Project');
+    }
+
+     public function students() {
+        return $this->hasOne('App\Student');
+    }
 }

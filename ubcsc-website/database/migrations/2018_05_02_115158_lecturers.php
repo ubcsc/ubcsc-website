@@ -16,9 +16,11 @@ class Lecturers extends Migration
         Schema::create('lecturers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('level');
-            $table->string('post');
-            $table->string('user_id');
+            $table->string('post')->nullable();
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
