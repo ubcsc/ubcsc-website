@@ -10,7 +10,7 @@ In most cases if a bug is discovered, an issue may be raised, also based on the 
 
 ### Setup
 
-This setup guide is intented to the Angular4 part of this projects all files located in the `admin-template` folder
+This setup guide is intented to the Angular6 part of this projects all files located in the `admin-template` folder
 
 Assumptions made here are 
 1. Node.js is installed   
@@ -25,7 +25,7 @@ Assumptions made here are
 
 3. Angular CLI is installed 
    - version 1.x or greater
-   - `verision 1.7.4` (Current)
+   - `verision 6.0.0` (Current)
    - If not intalled run `npm install -g @angular/cli`
    - NB Angular CLI recomends for Node.js and npm to be intalled before this intallation
 
