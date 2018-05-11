@@ -16,9 +16,13 @@ class Projects extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('desc');
-            $table->string('user_id');
+            $table->text('desc')->nullable();
+            //$table->dateTime('created_at')->nullable();
+            $table->integer('user_id')->unsigned();
+            
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
+
         });
     }
 

@@ -15,8 +15,12 @@ class Students extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('level');
-            $table->string('user_id');
+            $table->string('ub_num')->unique();
+            $table->string('level')->nullable();
+            $table->integer('user_id')->unsigned();
+            
+
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
