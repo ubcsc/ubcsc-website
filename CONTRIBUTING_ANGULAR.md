@@ -10,7 +10,7 @@ In most cases if a bug is discovered, an issue may be raised, also based on the 
 
 ### Setup
 
-This setup guide is intented to the Angular4 part of this projects all files located in the `admin-template` folder
+This setup guide is intented to the Angular6 part of this projects all files located in the `admin-template` folder
 
 Assumptions made here are 
 1. Node.js is installed   
@@ -25,7 +25,7 @@ Assumptions made here are
 
 3. Angular CLI is installed 
    - version 1.x or greater
-   - `verision 1.7.4` (Current)
+   - `verision 6.0.0` (Current)
    - If not intalled run `npm install -g @angular/cli`
    - NB Angular CLI recomends for Node.js and npm to be intalled before this intallation
 
@@ -37,10 +37,11 @@ Setup Steps
 4. run `ng serve --open` to build and open on the browser on `http://localhost:4200`
 5. alternatively run `ng serve` to build and move to browser of your choice and enter `http://localhost:4200`
 
-After all components are created and  enter the comand below to build ans direct the final build to the laravel public/app directory 
-`ng build --base-href http://localhost:8000/app/`
+After all components are created and enter the comand below to build ans direct the final build to the laravel public/admin directory
+
+`ng build --base-href http://localhost:8000/admin/`
 
 See the final build in the laravel server  
-`http://localhost:8000/app/`
+`http://localhost:8000/admin/`
 
 Setup for laravel and running the laravel server is found in the `CONTRIBUTING_LARAVEL.md`.
