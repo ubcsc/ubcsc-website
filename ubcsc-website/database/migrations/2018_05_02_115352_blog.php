@@ -17,7 +17,7 @@ class Blog extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('content');
-            $table->string('date');
+            //$table->string('date');
             $table->string('user_id');
             $table->timestamps();
         });
