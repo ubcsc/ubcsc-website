@@ -37,7 +37,8 @@ Setup Steps
 4. run `ng serve --open` to build and open on the browser on `http://localhost:4200`
 5. alternatively run `ng serve` to build and move to browser of your choice and enter `http://localhost:4200`
 
-After all components are created and  enter the comand below to build ans direct the final build to the laravel public/app directory 
+After all components are created and enter the comand below to build ans direct the final build to the laravel public/admin directory
+
 `ng build --base-href http://localhost:8000/admin/`
 
 See the final build in the laravel server  
