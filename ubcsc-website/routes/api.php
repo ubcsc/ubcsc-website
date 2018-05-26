@@ -22,7 +22,6 @@ Route::middleware('auth:api')->post('/user', function (Request $request) {
 
 Route::get('/homepageinfo', function(Request $request)
 {    
-
     return response()->json(['name' => 'Angular', 'message' => 'Testing the Api route of angular to laravel, globale.service.ts file in angular contains the routes to this message']);
 });
 
