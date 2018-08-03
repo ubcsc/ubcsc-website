@@ -1,0 +1,18 @@
+.ubcsc-navbar 
+{
+    background-color: rgb(43, 2, 43);
+}
+.ubcsc-searchinput
+{
+    width: 300px;
+    font-weight:lighter;
+    text-decoration-color:  rgb(43, 2, 43);
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+a
+{
+    color: rgb(43, 2, 43);
+    font-weight:lighter ;
+}
