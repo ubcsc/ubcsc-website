@@ -18,9 +18,9 @@ Assumptions made here are
    - `v8.11.1 LTS (Current)` prefferable 
    - Installation steps can be found here `https://nodejs.org/en/download/`
 
-2. NPM is  installed 
+2. NPM is installed 
    - npm version 5.x or greater
-   - 'v6.0.0' (Current) prefferable 
+   - `v6.0.0` (Current) prefferable 
    - Luckly for you npm intalls authomatically when intalling Node.js
 
 3. Angular CLI is installed 
