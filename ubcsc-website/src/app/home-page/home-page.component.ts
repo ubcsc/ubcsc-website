@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home-page',
@@ -21,6 +22,7 @@ export class HomePageComponent implements OnInit {
 
   studies: Study[] = new Array();
   activities: Activity[] = new Array();
+  affiliates: Affiliate[] = new Array();
 
   constructor() {
 
@@ -79,9 +81,48 @@ export class HomePageComponent implements OnInit {
     this.activities[1].image = '../assets/img/activity1.jpeg';
     this.activities[2].image = '../assets/img/activity2.jpeg';
 
+    this.affiliates[0] = new Affiliate();
+    this.affiliates[1] = new Affiliate();
+    this.affiliates[2] = new Affiliate();
+
+    this.affiliates[0].image = '../assets/img/done.jpeg';
+    this.affiliates[1].image = '../assets/img/done.jpeg';
+    this.affiliates[2].image = '../assets/img/done.jpeg';
+
+    this.affiliates[0].name = 'Stanford';
+    this.affiliates[1].name = 'Harvard';
+    this.affiliates[2].name = 'MIT';
   }
 
   ngOnInit() {
   }
 
+}
+enum TypeOfActivity {SPORT, ACEDEMICS, SOCIALS}
+
+export class Study {
+  title: string;
+  decription: string;
+  image: string;
+
+  constructor() {
+  }
+}
+export class Activity {
+  title: string;
+  decription: string;
+  image: string;
+  type: TypeOfActivity;
+
+  constructor() {
+  }
+}
+
+export class Affiliate {
+  name: string;
+  image: string;
+  link: string;
+
+  constructor() {
+  }
 }
