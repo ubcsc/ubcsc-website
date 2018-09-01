@@ -7,19 +7,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { FooterPageComponent } from './footer-page/footer-page.component';
 // for boostrapping
 
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent },  // this will be default route aka home-page
     { path: 'login-page', component: LoginPageComponent },
+    { path: 'footer-page', component: FooterPageComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    FooterPageComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [HomePageComponent, LoginPageComponent]
 })
 export class AppModule { }

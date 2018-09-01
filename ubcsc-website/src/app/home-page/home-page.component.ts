@@ -48,9 +48,9 @@ export class HomePageComponent implements OnInit {
                             dolor sit amet consectetur adipiscing elit \
                             himenaeos, aenean massa habitant magna donec \
                             per nibh ante, tortor laoreet metus quis arcu';
-    this.studies[0].image = '../assets/img/study0.jpeg';
-    this.studies[1].image = '../assets/img/study1.jpeg';
-    this.studies[2].image = '../assets/img/study2.jpeg';
+    this.studies[0].image = '../assets/img/activity0.jpeg';
+    this.studies[1].image = '../assets/img/activity0.jpeg';
+    this.studies[2].image = '../assets/img/activity0.jpeg';
 
     this.activities[0] = new Activity();
     this.activities[1] = new Activity();
@@ -126,3 +126,4 @@ export class Affiliate {
   constructor() {
   }
 }
+

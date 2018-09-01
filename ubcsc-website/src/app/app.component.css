@@ -1,0 +1,33 @@
+body
+{
+    margin: 0 auto;
+}
+.ubcsc-navbar 
+{
+    background-color: rgb(43, 2, 43);
+}
+.nav-tabs a
+{
+    color: rgb(43, 2, 43);
+    font-weight:lighter ;
+}
+.nav-tabs a:hover
+{
+    color: white;
+    background-color: rgb(43, 2, 43);
+    cursor: pointer;
+}
+p a
+{
+    text-decoration: underline;
+    color: inherit;
+}
+.ubcsc-searchinput
+{
+    font-weight:lighter;
+    text-decoration-color:  rgb(43, 2, 43);
+    align-self: center;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url("done.jpeg");
+}

@@ -1,13 +1,25 @@
 body
 {
     margin: 0 auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 14px;
 }
 .ubcsc-navbar 
 {
     background-color: rgb(43, 2, 43);
-
+}
+.nav-tabs a
+{
+    color: rgb(43, 2, 43);
+    font-weight:lighter ;
+}
+.nav-tabs a:hover
+{
+    color: white;
+    background-color: rgb(43, 2, 43);
+}
+p a
+{
+    text-decoration: underline;
+    color: inherit;
 }
 .ubcsc-searchinput
 {
@@ -18,12 +30,6 @@ body
     margin-top: 50px;
     background-image: url("../done.jpeg");
 }
-a
-{
-    color: rgb(43, 2, 43);
-    font-weight:lighter ;
-}
-
 .ubcsc-billboard
 {
     height: 300px;
@@ -33,36 +39,27 @@ a
     border-color: rgb(43, 2, 43);
     position: relative;
 }
-.ubcsc-studydescription
+.ubcsc-study
 {
-    height: 500px;
-    padding: 10px;
+    height: 100%;
+    padding: 2%;
 }
-.ubcsc-ativitydescription
+.ubcsc-ativity
 {
-    height: 500px;
-    padding: 10px;
+    height: 100%;
+    padding: 2%;
 }
 
-.ubcsc-activities
+.ubcsc-activities-row
 {
     margin-top: 50px;
     margin-bottom: 50px;
+    
 }
-.ubcsc-studies
+.ubcsc-studies-row
 {
     margin-top: 50px;
     margin-bottom: 50px; 
-}
-.ubcsc-footer
-{
-    height: 50%;
-    background-position: center;
-    border: solid;
-    border-width: 1px;
-    border-color: rgb(43, 2, 43);
-    background-color:  rgb(43, 2, 43);
-    color: white;
 }
 img {
     width: 100%;
@@ -73,4 +70,31 @@ img {
 {
     background-color: rgb(43, 2, 43);
     margin-bottom: 10px;
+    height: 100px;
 }
+
+.horizontal-line {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .horizontal-line:before,
+  .horizontal-line:after {
+    background-color: rgb(43, 2, 43);;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .horizontal-line:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .horizontal-line:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
