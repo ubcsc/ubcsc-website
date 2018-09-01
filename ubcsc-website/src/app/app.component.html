@@ -1,1 +1,37 @@
-<router-outlet></router-outlet>
+<html>
+  <head>
+      <title> University of Buea | Department of Computer Science </title>
+  </head>
+  <body>
+        <div id="NavBar">
+                <div class="container-fluid ubcsc-navbar">
+                        <div class="row">
+                            <div class="col-sm-10 align-content-sl-start" style="color:white">
+                                <h1><span class="lead">{{titleNameUb}}</span><br>{{titleNameDpt}}</h1>
+                            </div>
+                            <div class="col-sm-2 align-content-sl-end form-group">
+                                <input type="text" placeholder="search" class="form-control ubcsc-searchinput">          
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <ul class="nav nav-tabs row list-inline">
+                            <li (click)="loadPage('HomePageComponent')"><a>Home</a></li>
+                            <li ><a routerLink = "">People and Resources</a></li>
+                            <li class="nav-link"><a routerLink = "">Projects and Inovation</a></li>
+                            <li class="nav-link"><a routerLink = "">News and Events</a></li>
+                            <li class="nav-link"><a routerLink = "">Campus</a></li>
+                            <li class="nav-link"><a routerLink = "">About</a></li>
+                            <li class="nav-link"><a routerLink = "">Alumi</a></li>
+                            <li (click)="loadPage('LoginPageComponent')" class="nav-link"><a>Login</a></li>
+                        </ul>
+                    </div>
+        </div>
+        <div>
+            <template #Body></template>
+        </div>
+        <div id="Footer">
+            <app-footer-page></app-footer-page>
+        </div>
+  </body>
+</html>

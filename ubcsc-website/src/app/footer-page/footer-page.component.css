@@ -1,0 +1,24 @@
+body
+{
+    margin: 0 auto;
+}
+p a
+{
+    text-decoration: underline;
+    color: inherit;
+}
+.ubcsc-footer
+{
+    height: 50%;
+    background-position: center;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(43, 2, 43);
+    background-color:  rgb(43, 2, 43);
+    color: white;
+}
+img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
